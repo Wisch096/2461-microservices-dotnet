@@ -3,6 +3,7 @@ using Microsoft.OpenApi.Models;
 using RestauranteService.AsyncDataServices;
 using RestauranteService.Data;
 using RestauranteService.Http;
+using RestauranteService.ItemServiceHttpClient;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -19,6 +20,7 @@ builder.Services.AddDbContext<AppDbContext>(opt => opt.UseMySql(connectionString
 
 builder.Services.AddScoped<IRestauranteRepository, RestauranteRepository>();
 
+builder.Services.AddHttpClient<IItemServiceHttpClient, IItemServiceHttpClient>();
 builder.Services.AddHttpClient<IItemHttpClient, ItemHttpClient>();
 builder.Services.AddSingleton<IMessageBusClient, MessageBusClient>();
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
