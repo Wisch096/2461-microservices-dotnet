@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj": {}
+    "C:\\repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj": {}
   },
   "projects": {
-    "C:\\Repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj": {
+    "C:\\repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj",
+        "projectUniqueName": "C:\\repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj",
         "projectName": "ItemService",
-        "projectPath": "C:\\Repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj",
+        "projectPath": "C:\\repos\\2461-microservices-dotnet\\ItemService\\ItemService.csproj",
         "packagesPath": "C:\\Users\\wisch\\.nuget\\packages\\",
-        "outputPath": "C:\\Repos\\2461-microservices-dotnet\\ItemService\\obj\\",
+        "outputPath": "C:\\repos\\2461-microservices-dotnet\\ItemService\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\wisch\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -35,6 +39,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -79,24 +88,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[6.0.31, 6.0.31]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[6.0.31, 6.0.31]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[6.0.31, 6.0.31]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[6.0.31, 6.0.31]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -105,7 +96,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300\\RuntimeIdentifierGraph.json"
         }
       }
     }
